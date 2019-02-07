@@ -1,0 +1,73 @@
+body {
+	margin: 0 auto;
+}
+
+#app {
+	margin: 40px;
+	border: 2px solid black;
+	border-radius: 3px;
+	padding: 20px;
+}
+
+.contactForm {
+	margin: 40px;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.contactForm input {
+	padding: 10px;
+	border-radius: 3px;
+	margin: 20px 20px;
+}
+
+.contactForm button {
+	background: none;
+	border: 1px solid black;
+	border-radius: 3px;
+	margin: 20px 0;
+}
+
+.contactItem {
+	background: #f2f2f2;
+	margin: 20px 40px;
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 3px;
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Fahkwang', sans-serif;
+}
+
+.contactItem p , a{ 
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+}
+
+@media only screen and (max-width: 900px) {
+  .contactForm {
+  		flex-direction: column;
+  }
+  .contactForm button {
+		padding: 10px;
+		max-width: 100px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+  .contactItem {
+		flex-direction: column;
+		margin: 20px 10px;
+	}
+
+	.contactItem p , a {
+		font-size: 12px;
+	}
+}
