@@ -10,6 +10,11 @@ var Contacts = React.createClass({
 
     return (
       React.createElement('ul', {className: 'contactsList'}, contacts)
+      /*
+      <ul className={'contactsList'}>
+        <Contact item={contact} key={contact.id} />
+      </ul>
+      */
     );
   }
 });

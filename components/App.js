@@ -28,11 +28,11 @@ var contactForm = {
 var App = React.createClass({
   render: function() {
     return (
-      React.createElement('div', {className: 'app'},
-      	React.createElement('p', {}, 'App'),
-        React.createElement(ContactForm, {contact: contactForm}),
-        React.createElement(Contacts, {items: contacts}, {})
-      )
-    );
+      <div className={'app'}>
+        <p>App</p>
+        <ContactForm contact={contactForm} />
+        <Contacts items={contacts} />
+      </div>
+    )
   }
 });
